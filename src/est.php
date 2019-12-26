@@ -11,7 +11,15 @@ class EST {
   public $raw_response = null;
   public $raw_request = null;
 
-  private static $banksDetails = array("garanti" => array("host" => "ccpos.garanti.com.tr",
+  private static $banksDetails = array("ziraat" => array("host" => "sanalpos2.ziraatbank.com.tr",
+                                                          "testhost" => "sanalpos2.ziraatbank.com.tr",
+                                                          "listOrdersURL" => "/fim/api",
+                                                          "detailOrderURL" => "/fim/api",
+                                                          "cancelOrderURL" => "/fim/api",
+                                                          "returnOrderURL" => "/fim/api",
+                                                          "purchaseOrderURL" => "/fim/api"),
+
+                                      "garanti" => array("host" => "ccpos.garanti.com.tr",
                                                           "testhost" => "ccpostest.garanti.com.tr",
                                                           "listOrdersURL" => "/servlet/ozelrapor",
                                                           "detailOrderURL" => "/servlet/cc5ApiServer",
@@ -60,7 +68,7 @@ class EST {
                                                               "purchaseOrderURL" => "/servlet/cc5ApiServer"));
 
   public function __construct($slug, $company, $name, $password, $debug = TRUE) {
-    $possibleSlugs = array("akbank", "garanti", "finansbank", "isbank", "anadolubank", "halkbank");
+    $possibleSlugs = array("ziraat", "akbank", "garanti", "finansbank", "isbank", "anadolubank", "halkbank");
     // If the slug is not among the possible slugs, then immediately throw an exception..
     if(!in_array($slug, $possibleSlugs)) {
       throw new Exception("Geçersiz bir slug seçtiniz.");
