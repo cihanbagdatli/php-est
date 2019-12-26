@@ -1,12 +1,9 @@
 # PHP EST
 
-PHP tabanlı EST Sanal POS Sistemleri Arabirimi
-
-[![EST](http://www.asseco-see.com.tr/images/est_logo.jpg)](http://www.asseco-see.com.tr/index.asp)
-
+PHP tabanlı EST Sanal POS Sistemleri Arabirimi.
 Bu arabirim EST tabanlı sanal pos arabirimlerine bağlanıp, kredi kartı ile sipariş verme işleri için geliştirilmiştir.
 
-Bu arabirim sadece **İş Bankası**, **Akbank**, **Anadolubank**, **Halkbank**, **Finansbank** Sanal POS arabirimleri ile uyumludur. Diğer EST tabanlı arabirimler için kullanılamamaktadır.
+Bu arabirim sadece **Ziraat Bankası**, **İş Bankası**, **Akbank**, **Anadolubank**, **Halkbank**, **Finansbank** Sanal POS arabirimleri ile uyumludur. Diğer EST tabanlı arabirimler için kullanılamamaktadır.
 
 EST Türkiye'nin e-Ticaret güvenli ödeme sistem ve hizmetleri sağlayıcısıdır. Türkiye'de e-Ticaret ödemeleri alanında faaliyet gösteren bankaların tamamına yakını bunu EST Ürün, Çözüm, Hizmetlerinden bir veya daha fazlasını kullanarak gerçekleştirmektedir.
 
